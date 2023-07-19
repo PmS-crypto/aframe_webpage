@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <div>
+   <h1>Ecodhaga's virtual trial room</h1>
+    <h2> we are building something really cool here</h2>
+    <h2>Download the app now</h2>
+    <a href="https://www.ecodhaga.com" target="_blank">Visit here</a>
+    </div>
+    <h3> here's a glimpse of what you will get to see - </h3>
+    <a-scene embedded>
+        <a-assets>
+            <!-- <audio src="https://soundcloud.com/user-940012401/luxury-rap-royalty-free-music?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" autoplay preload loop></audio> -->
+            <audio src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay preload loop position="-3 1 -4"></audio>
+            <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+            <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+            <img id="skyTexture"
+            src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+        </a-assets>
+        <!-- <a-sky src="#skyTexture"></a-sky> -->
+        <!-- checkerboard, goaland, starry, osiris -->
+        <a-plane material="color: #FFFFFF; scr= #floor; repeat: 5 5; normal-map: #floor-NRM; normal-texture-repeat: 5 5" rotation="-90 0 0" scale="100 100 1"></a-plane>
+        <!--<a-asset-item id="#xxl" src="./assets/Red tshirt.fbx"></a-asset-item>-->
+        <!-- <a-entity environment="preset: goaland; ground: canyon; flatShading: true; groundTexture: none; groundColor: #553e35; dressing: towers; dressingAmount: 50; dressingColor: #795449"></a-entity> -->
+        <a-light type="ambient" color="#AF1281"></a-light>
+        <!-- <a-entity fbx-model="#xxl"></a-entity> -->
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+    </a-scene>
+    <h2>So why the wait, try new clothes today NOW, keep up your chin and shine</h2>
+    <p>....</p>
+    <footer>
+      <p>footer</p>
+    </footer>
+  </body>
+</html>
